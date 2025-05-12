@@ -26,7 +26,7 @@ The Advice Generator App allows users to generate random advice by clicking a bu
 
 ![Screenshot of the Advice Generator App](./images/screenshot.jpg)
 
-- [Live Site](https://your-live-site-url.com)
+- [Live Site](https://legendary-blini-9f69c7.netlify.app)
 
 ## Built With
 
