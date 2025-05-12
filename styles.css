@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+:root {
+  --primary-blue-200: hsl(193, 38%, 86%);
+  --primary-green-300: hsl(150, 100%, 66%);
+  --neutral-blue-600: hsl(217, 19%, 38%);
+  --neutral-blue-900: hsl(217, 19%, 24%);
+  --neutral-blue-950: hsl(218, 23%, 16%);
+  --font-family: "Manrope", sans-serif;
+  --font-size-quote: 28px;
+  --font-weight: 800;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  padding: 1.5rem;
+  background-color: var(--neutral-blue-950);
+}
+
+section.advice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+  padding: 2rem;
+  background-color: var(--neutral-blue-900);
+  border-radius: 1.5rem;
+  position: relative;
+  font-family: var(--font-family);
+}
+
+section.advice h1 {
+  font-size: 16px;
+  font-weight: var(--font-weight);
+  color: var(--primary-green-300);
+  text-align: center;
+}
+
+section.advice p {
+  font-size: var(--font-size-quote);
+  font-weight: var(--font-weight);
+  color: var(--primary-blue-200);
+  text-align: center;
+  margin: 1.5em 0;
+}
+
+section.advice picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+
+section.advice button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: var(--primary-green-300);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: -30px; /*  */
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+section.advice button:hover {
+  background-color: hsl(150, 100%, 76%);
+  box-shadow: 0 0 40px hsl(150, 100%, 76%);
+  transform: translateX(-50%) scale(1.05);
+}
+section.advice button:active {
+  background-color: hsl(150, 100%, 76%);
+  box-shadow: 0 0 40px hsl(150, 100%, 76%);
+  transform: translateX(-50%) scale(0.95);
+}
+section.advice button:focus {
+  outline: none;
+}
