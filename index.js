@@ -4,9 +4,14 @@ const adviceTextEl = document.getElementById("advice-text");
 
 const getAdvice = async () => {
   try {
-    const res = await fetch("https://api.adviceslip.com/advice");
+    const res = await fetch(
+      "https://6820b87b259dad2655ad6684.mockapi.io/api/v1/slip"
+    );
     const data = await res.json();
-    return data.slip;
+
+    let randomNumber = Math.floor(Math.random() * data.length);
+
+    return data[randomNumber];
   } catch (error) {
     return { id: "Error", advice: "Could not fetch advice" };
   }
