@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
 :root {
-  --primary-blue-200: hsl(193, 38%, 86%);
-  --primary-green-300: hsl(150, 100%, 66%);
-  --neutral-blue-600: hsl(217, 19%, 38%);
+  --primary-blue-200: hsl(193, 53%, 51%);
+  --primary-green-300: hsl(278, 80%, 44%);
+  --neutral-blue-600: hsl(216, 50%, 40%);
   --neutral-blue-900: hsl(217, 19%, 24%);
   --neutral-blue-950: hsl(218, 23%, 16%);
   --font-family: "Manrope", sans-serif;
@@ -92,3 +92,128 @@ section.advice button:active {
 section.advice button:focus {
   outline: none;
 }
+
+h2{
+  margin: 20px;
+  color: white;
+}
+
+.sozİnput{
+background-color: var(--neutral-blue-600);
+color: white;
+border: none;
+outline: none;
+border-radius: 15px;
+width: 100%;
+}
+
+.sozİnput:focus{
+  background-color: black;
+
+}
+
+section.container{
+  background-color: var(--neutral-blue-900);
+  padding: 3rem;
+  border-radius: 1.5rem;
+  margin: 1rem;
+}
+
+.c{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.container p{
+  font-size: var(--font-size-quote);
+  font-weight: var(--font-weight);
+  color: var(--primary-blue-200);
+  text-align: center;
+  margin: 1.5em 0;
+  width: 300px;
+}
+
+.container input{
+width: 100%;
+}
+
+.users {
+display: flex;
+gap: 10px;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+margin-top: 40px;
+}
+
+.user-container {
+display: flex;
+flex-direction: column;
+width: 12rem;
+border: 2px solid rgb(101, 115, 120);
+border-radius: 10px;
+}
+
+img{
+border-top-left-radius: 9px;
+border-top-right-radius: 9px;
+}
+
+.user-info {
+padding: 5px 10px;
+text-align: center;
+}
+
+.btn{
+height: 35px;
+width: 125px;
+background-color: rgb(67, 84, 71);
+color: rgb(160, 253, 183);
+border-radius: 15px;
+cursor: pointer;
+border: 3px solid rgb(37, 67, 47);
+box-shadow: 0 3px 0px 1px black;
+}
+
+.btn:hover{
+transition: .35s all;
+border-color: rgb(208, 202, 166);
+background-color: rgb(116, 83, 23);
+color: rgb(255, 238, 0);
+box-shadow: 0 0 0 0 rgb(9, 7, 7);
+}
+
+.input-container{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+gap: 10px;
+}
+
+input{
+padding: 10px 20px;
+background-color: rgb(34, 63, 33);
+color: white;
+border: none;
+outline: none;
+border-radius: 15px;
+width: 75%;
+text-align: center;
+}
+
+input::placeholder{
+color: gainsboro;
+text-align: center;
+}
+
+.btn-container{
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 10px;
+gap: 10px;
+}
+

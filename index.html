@@ -16,6 +16,51 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+
+
+    <section class="container">
+    
+    
+        <div class="input-container">
+    
+          <input type="text" id="id" name="id" placeholder="ID">
+          <input type="text" id="username" name="username" placeholder="Username">
+          <input type="text" id="fullname" name="fullname" placeholder="Full Name">
+          <input type="url" id="avatar" name="avatar" placeholder="Avatar">
+          <a href=""></a>
+    
+        </div>
+    
+        <div class="btn-container">
+            <button type="button" title="Get" class="btn" id="btnGet">GET</button>
+            <button type="button" title="Post" class="btn" id="btnPost">POST</button>
+            <button type="button" title="Put/Update" class="btn" id="btnPut">PUT</button>
+            <button type="button" title="Delete" class="btn" id="btnDelete">DELETE</button>
+        </div>
+    
+        <div class="users">
+        </div>
+
+    </section>
+
+    <div class="c">
+      <section class="container">
+        <div>
+          <input class="sozİnput" type="text" id="soz" placeholder="..." />
+          <h2>Kelimelirin kalemi ol</h2>
+          <button type="button" title="Gönder" class="btn" id="btnGonder">Gönder</button>
+        </div>
+      
+      </section>
+      <section class="container">
+        <p>
+          <span class="sozler"></span> 
+          <br/>
+          <span class="yazar">Yazar</span>
+        </p>
+      </section>
+    </div>
+
     <main>
       <section class="advice">
         <h1>Advice #<span id="advice-id"></span></h1>
@@ -38,6 +83,7 @@
         </button>
       </section>
     </main>
+
     <script src="./index.js"></script>
   </body>
 </html>
